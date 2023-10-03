@@ -1,0 +1,13 @@
+.fixed-animation {
+  position: fixed;
+  top: -100px; /* Adjust this value to position the animation off-screen initially */
+  left: 0;
+  right: 0;
+  transition: top 0.3s ease-in-out;
+  z-index: 9999; /* Adjust the z-index to ensure it displays above other content */
+  /* Additional styling for your animation container */
+}
+
+.fixed-animation.visible {
+  top: 0; /* Show the animation when it becomes visible */
+}
